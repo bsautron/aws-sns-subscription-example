@@ -3,7 +3,7 @@ require('express')()
     /** enable body parser */
     .use(require('body-parser').text())
     /** expose the endpoin to receive messages */
-    .post('/ending', (req, res) => {
+    .post('/endpoint', (req, res) => {
         /** the body is a string JSON */
         const body = JSON.parse(req.body)
 
